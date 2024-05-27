@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: var(--inter);
+    font-weight: 400;
+    color: white;
+    
+}
+
+:root{
+    --primary: #00A3FF;
+    --inter: font-family: "Inter" sans-serif ;
+    --rubik: font: "Rubik", sans-serif ;
+   ;
+ 
+}
+.container-grid{
+    margin: 0 auto;
+    max-width: 1000px;
+    /* border: 2px  solid white; */
+
+}
+
+header{
+    display: flex;
+    gap: 25%;
+    h1{
+        color: var(--primary);
+        font: var(--rubik);
+        align-items: center;
+        font-size: 40px;
+        font-weight: 500;
+        justify-content: center;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 35px;
+    
+        
+        ul{
+            display: flex;
+            padding: 8px;
+            list-style-type: none;
+            li{
+                margin: 15px 20px;
+                a{
+                    text-decoration: none;
+                    
+                }
+            }
+        }
+        input{
+            border-radius: 10px;
+            padding-left: 20px ;
+            background-color:  #151B26;
+            border: none;
+            gap: 10px;
+        }
+    }
+}
+
+.scroll{
+    display: flex;
+    overflow: auto;
+    padding: 10px;
+    white-space: nowrap;
+  
+    h2{
+        display: flex;
+        align-items: center;
+        padding: 10px;
+        justify-content: center;
+        margin: 20px;
+        width: 200px;
+        height: 30px;
+        border: 2px solid lightgray;
+        border-radius: 10px;
+        gap: 10px;
+        a{
+            text-decoration: none;
+            
+        }
+    }
+
+
+}
+
+.scroll::-webkit-scrollbar {
+    height: 10px;
+}
+.scroll::-webkit-scrollbar-track {
+    background: #151B26;
+  }
+
+.scroll::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 20px;
+  
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    h1{
+        display: flex;
+        font-size: 32px;
+        margin: 40px 0 0 0;
+    }
+    h3{
+        margin: 10px 0 50px 0;
+    }
+}
+
+.imagem{
+    background-image: url("../assets/image/wallpaper.png");
+    opacity: .5;
+    background-size: 100% 100%;
+    height: 400px;
+    background-repeat: no-repeat;
+    top: 300px;
+}
+.texto{
+    /* border: 2px solid white; */
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    h1{
+        position: absolute;
+        background: transparent;
+        top: 420px;
+        font-size: 30px;
+        margin: 20px 0;
+    }
+    h4{
+        position: absolute;
+        width: 35%;
+        letter-spacing: 1px;
+        flex-wrap: wrap;
+        background: transparent;
+        top: 500px;
+    }
+}
+
+.cards{
+    font-family: var(--rubik);
+    h2{
+        display: flex;
+        margin-bottom: 30px;
+        font-size: 32px;
+    }
+}
+
+.filmes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    div{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        h4{
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            align-items: center;
+            text-align: center;
+            position: relative;
+            bottom: 70px;
+            background-color: transparent;
+        }
+        h5{
+            display: flex;
+            position: relative;
+            bottom: 90px;
+            background-color: transparent;
+            justify-content: center;
+        }
+        img{
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.998), rgba(0, 0, 0, 0));
+            border-radius: 8px;
+            width: 150px;
+            height: 230px;
+        }
+    }
+}
+.button{
+    display: flex;
+    justify-content: center;
+    a{
+        text-decoration: none;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        display: flex;
+        /* width: 100px; */
+        background-color: #151B26;
+        border: none;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+
+.animes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+    div{
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        h5{
+            display: flex;
+            position: relative;
+            bottom: 100px;
+            background-color: transparent;
+            justify-content: center;
+        }
+        img{
+            mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.998), rgba(0, 0, 0, 0));
+            border-radius: 8px;
+            width: 150px;
+            height: 230px;
+        }
+   
+}
+}
+.titulo1{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 ;
+    .mais{
+        width: 18%;
+    }
+}
+.imagem1{
+    background-image: url("../assets/image/wallpaper-video.png");
+    opacity: .5;
+    background-size: 100% 100%;
+    /* height: 100%; */
+    background-repeat: no-repeat;
+    /* top: 250px; */
+    a{
+        background-color: transparent;
+    }
+    img{
+        position: relative;
+        top: 45%;
+        left: 45%;
+        background-color: transparent;
+    }
+}
+.section-div{
+    display: grid;
+    grid-template-columns: 4.5fr 1fr;
+    grid-gap: 10px;
+    .cards-lateral{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        div{
+            display: flex;
+            div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                /* margin: 8px; */
+                gap: 16px;
+                h4, p{
+                    background-color: transparent;
+                }
+            }
+            background-color: #151B26;
+            gap: 10px;
+            img{
+                width: 80px;
+                height: 120px;
+                gap: 10px;
+            }
+        }
+        div{
+            display: flex;
+            /* h5{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            } */
+        }
+        /* display: flex; */
+        
+    }
+}
+
+.descricao{
+    display: flex;
+    gap: 50px;
+    margin: 30px 0;
+    div{
+        img{
+            border-radius: 8px;
+            width: 200px;
+            height: 100%;
+        }
+    
+    }
+    .tex{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        span{
+            margin-left: 10px;
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: #BFBFBF;
+        }
+        p{
+            font-size: 16px;
+            letter-spacing: 1px;
+            color: #BFBFBF;
+        }
+    }
+}
+
+.animes2{
+    display: flex;
+    gap: 20px;
+}
+
+.comentario{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    div{
+        height: 50%;
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+    }
+}
+
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+}
+
